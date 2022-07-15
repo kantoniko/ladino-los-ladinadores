@@ -13,7 +13,7 @@ images_in_yaml = set()
 
 for entry in data:
     assert 'title' in entry
-    assert len(entry['title']) > 10
+    assert len(entry['title']) > 5
     assert 'img' in entry
     assert os.path.exists(os.path.join(images_dir, entry['img']))
     images_in_yaml.add(entry['img'])
