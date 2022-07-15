@@ -109,10 +109,58 @@
 - img: los-veikolos.jpg
   title: Los veíkolos
 
+
+- img: verbos-regolares-en-ar.jpg
+  title: 'Verbos regolares en -ar'
+- img: verbos-regolares-en-er.jpg
+  title: 'Verbos regolares en -er'
+- img: verbos-regolares-en-ir.jpg
+  title: 'Verbos regolares en -ir'
+
+
 - img: verbos-iregolares-ser.jpg
   title: 'Verbos iregolares: ser'
   keywords:
     - ser
-- img: verbos-regolares-en-ar.jpg
-  title: 'Verbos regolares en -ar'
+- img: verbos-iregolares-estar.jpg
+  title: 'Verbos iregolares: estar'
+  keywords:
+    - estar
+- img: verbos-iregolares-aver.jpg
+  title: 'Verbos iregolares: aver'
+  keywords:
+    - aver
+- img: verbos-iregolares-tener.jpg
+  title: 'Verbos iregolares: tener'
+  keywords:
+    - tener
+- img: verbos-iregolares-ir.jpg
+  title: 'Verbos iregolares: ir'
+  keywords:
+    - ir
+- img: verbos-iregolares-azer.jpg
+  title: 'Verbos iregolares: azer'
+  keywords:
+    - azer
+- img: verbos-iregolares-saver.jpg
+  title: 'Verbos iregolares: saver'
+  keywords:
+    - saver
+- img: verbos-iregolares-dizir.jpg
+  title: 'Verbos iregolares: dizir'
+  keywords:
+    - dizir
+- img: verbos-iregolares-kerer.jpg
+  title: 'Verbos iregolares: kerer'
+  keywords:
+    - kerer
+- img: verbos-iregolares-poder.jpg
+  title: 'Verbos iregolares: poder/pueder'
+  keywords:
+    - poder
+    - pueder
+- img: verbos-iregolares-dar.jpg
+  title: 'Verbos iregolares: dar'
+  keywords:
+    - dar
 
