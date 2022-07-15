@@ -18,6 +18,8 @@ for entry in data:
     assert os.path.exists(os.path.join(images_dir, entry['img']))
     images_in_yaml.add(entry['img'])
 
-assert images == images_in_yaml
+if images != images_in_yaml:
+    print(images-images_in_yaml)
+    exit(1)
 
 print("Everything looks fine")
