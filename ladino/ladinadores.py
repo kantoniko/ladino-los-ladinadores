@@ -1,4 +1,5 @@
 import os
+import sys
 from yaml import safe_load
 
 def load_ladinadores(root):
@@ -38,9 +39,9 @@ def load_ladinadores(root):
     return data
 
 if __name__ == "__main__":
-    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    #print(root)
-    data = load_ladinadores(root)
+    if len(sys.argv) != 2:
+        exit(f"Usage: {sys.argv[0]} path_to_los_ladinadores")
+    data = load_ladinadores(sys.argv[1])
     print("Everything looks fine")
     #print(data)
 
