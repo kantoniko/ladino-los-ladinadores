@@ -10,9 +10,15 @@ def load_ladinadores(root):
         print(filename)
         img_filename = filename[0:-4] + 'jpg'
         print(img_filename)
-        assert os.path.exists(os.path.join(images_dir, img_filename))
+        img_path = os.path.join(images_dir, img_filename)
+        if not os.path.exists(img_path):
+            exit(f"Missing image from {img_path}")
         with open(os.path.join(yaml_dir, filename)) as fh:
             this = safe_load(fh)
+            this["img"] = img_filename
+            if (list(filter(lambda entry: entry["img"] == img_filename, data))):
+                exit(f"File {img_filename} should be removed from afishes.yaml")
+            data.append(this)
 
     images = set(os.listdir(images_dir))
 
@@ -36,5 +42,5 @@ if __name__ == "__main__":
     #print(root)
     data = load_ladinadores(root)
     print("Everything looks fine")
-    print(data)
+    #print(data)
 
