@@ -7,9 +7,9 @@ def load_ladinadores(root):
     images_dir = os.path.join(root, 'docs', 'afishes')
     yaml_dir = os.path.join(root, 'afishes')
     for filename in os.listdir(yaml_dir):
-        print(filename)
+        # print(filename)
         img_filename = filename[0:-4] + 'jpg'
-        print(img_filename)
+        # print(img_filename)
         img_path = os.path.join(images_dir, img_filename)
         if not os.path.exists(img_path):
             exit(f"Missing image from {img_path}")
